@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.logo{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 20px;
+}
+
+div.logo img{
+    width: 330px;
+    height: 300px;
+}
+
+div.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label.usuario, 
+label.senha{
+    display: flex;
+    flex: auto;
+    display: block;
+    width: 300px;
+    margin: 10px 0 0 0;
+    padding-top: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+div.login button{
+    width: 100px;
+    height: 40px;
+    font-family: "Special Elite", system-ui;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+div.Greetings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+h2{
+    margin-left: 20px;
+}
+div.listaSuspeitos,
+div.listaPistas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;          
+    justify-content: center;
+    align-items: center;
+    gap: 24px;                 
+    margin: 30px 10px;
+    padding: 0;
+}
+
+div.listaSuspeitos img,
+div.listaPistas img {
+    width: 130px;              
+    height: 120px;
+}  
+
