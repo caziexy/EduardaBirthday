@@ -1,0 +1,7 @@
+<button id="iniciarBtn">Iniciar Ficha</button>
+  <div id="maquina"></div>
+
+  <!-- Áudio -->
+  <audio id="somTecla" src="tecla.mp3" preload="auto"></audio>
+
+código que aplica som ao texto
