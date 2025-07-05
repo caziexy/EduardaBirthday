@@ -99,7 +99,7 @@ h1, h2 {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     border-bottom: 2px solid white;
-    padding-bottom: 10px;
+    padding: 20px;
     margin: 16px 0;
     text-align: center;
 }
@@ -124,18 +124,28 @@ li{
     padding: 50px;
 }
 
-div.pista1,
-div.pista2,
-div.pista3,
-div.pista4 {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
+div.pista1 p,
+div.pista2 p,
+div.pista3 p,
+div.pista4 p {
+    margin: 24px auto;
     padding: 0 16px;
-    max-width: 800px;
+    max-width: 700px;
     text-align: center;
-    font-size: clamp(1.2rem, 3vw, 300px); 
-    line-height: 1.6;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    div.pista1 p,
+    div.pista2 p,
+    div.pista3 p,
+    div.pista4 p {
+        padding: 0 6vw;
+        max-width: 98vw;
+        font-size: 18px;
+        text-align: left;
+    }
 }
 
 div.terminal-box{
@@ -155,7 +165,7 @@ div.terminal-box{
 }
 
 .grid img {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -244,7 +254,6 @@ footer{
     }
 }
 
-/* Tablet adjustments */
 @media (min-width: 481px) and (max-width: 768px) {
     div.listaSuspeitos, 
     div.listaPistas {
@@ -322,9 +331,31 @@ a:hover {
 
 footer {
     display: block;
+    padding: 15px;
     margin-top: 0.5rem;
     font-size: 0.85rem;
     color: #777;
+}
+
+
+div.Culpado p{
+    text-align: center;
+    padding: 15px;
+}
+
+div.Culpado button {
+    width: 130px;
+    height: 50px;
+    font-family: "Special Elite", system-ui;
+    font-size: clamp(16px, 4vw, 20px);
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px auto 0 auto; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
 }
 
 @media (max-width: 600px) {
